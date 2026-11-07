@@ -11,7 +11,7 @@
 ## Contenido
 
 - sql/: 01 a 06, scripts de las actividades 2, 4, 6, 10, 11 y 12
-- evidencias/: 01 a 15, 16-pgaudit (Parte C), bitacora-lab01.log y bitacora-lab01.sha256
+- evidencias/: 01 a 15, bitacora-lab01.log y bitacora-lab01.sha256
 - informe.md
 
 ## Notas
