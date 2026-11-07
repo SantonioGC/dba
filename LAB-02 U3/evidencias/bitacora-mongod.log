@@ -1,0 +1,692 @@
+{"t":{"$date":"2026-11-07T12:50:40.108Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"-","msg":"Environment variable MONGODB_CONFIG_OVERRIDE_NOFORK == 1, overriding \"processManagement.fork\" to false"}
+
+{"t":{"$date":"2026-11-07T05:50:40.108-07:00"},"s":"I",  "c":"CONTROL",  "id":20698,   "ctx":"-","msg":"***** SERVER RESTARTED *****"}
+
+{"t":{"$date":"2026-11-07T05:50:40.108-07:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"-","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+
+{"t":{"$date":"2026-11-07T05:50:40.109-07:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.109-07:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":25090,"port":27017,"dbPath":"/var/lib/mongo","architecture":"64-bit","host":"fedora"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.27","gitVersion":"fc88ca137231d7457aed6265d4f32a361ae71716","openSSLVersion":"OpenSSL 3.5.9 29 Sep 2026","modules":[],"allocator":"tcmalloc","environment":{"distmod":"rhel90","distarch":"x86_64","target_arch":"x86_64"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Fedora release 43 (Forty Three)","version":"Kernel 7.2.10-100.fc43.x86_64"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.114-07:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"config":"/etc/mongod.conf","net":{"bindIp":"127.0.0.1","port":27017},"processManagement":{"timeZoneInfo":"/usr/share/zoneinfo"},"security":{"authorization":"enabled"},"storage":{"dbPath":"/var/lib/mongo","journal":{"enabled":true}},"systemLog":{"destination":"file","logAppend":true,"path":"/var/log/mongodb/mongod.log"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.115-07:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/var/lib/mongo","storageEngine":"wiredTiger"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.115-07:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=15422M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.263-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":263469,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Recovering log 69 through 70"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.295-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":295682,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Recovering log 70 through 70"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.345-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":345279,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Main recovery loop: starting at 69/120320 to 70/256"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.407-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":407798,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Recovering log 69 through 70"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.442-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":442765,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Recovering log 70 through 70"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.474-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":474548,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"recovery log replay has successfully finished and ran for 211 milliseconds"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.474-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":474638,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Set global recovery timestamp: (0, 0)"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.474-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":474659,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"Set global oldest timestamp: (0, 0)"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.475-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":475117,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"recovery rollback to stable has successfully finished and ran for 0 milliseconds"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.475-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":475707,"thread":"25090:0x7fa444550e40","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":6,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 1, snapshot max: 1 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 23397"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.496-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":496715,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"recovery checkpoint has successfully finished and ran for 21 milliseconds"}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.496-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1794055840,"ts_usec":496786,"thread":"25090:0x7fa444550e40","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":30,"verbose_level":"DEBUG","verbose_level_id":1,"msg":"recovery was completed successfully and took 233ms, including 211ms for the log replay, 0ms for the rollback to stable, and 21ms for the checkpoint."}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.499-07:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":384}}
+
+{"t":{"$date":"2026-11-07T05:50:40.499-07:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.512-07:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+
+{"t":{"$date":"2026-11-07T05:50:40.512-07:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.512-07:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+
+{"t":{"$date":"2026-11-07T05:50:40.514-07:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+
+{"t":{"$date":"2026-11-07T05:50:40.514-07:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/var/lib/mongo/diagnostic.data"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.518-07:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.518-07:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+
+{"t":{"$date":"2026-11-07T05:50:40.518-07:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.519-07:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"127.0.0.1"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.519-07:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+
+{"t":{"$date":"2026-11-07T05:50:40.519-07:00"},"s":"I",  "c":"CONTROL",  "id":8423403, "ctx":"initandlisten","msg":"mongod startup complete","attr":{"Summary of time elapsed":{"Startup from clean shutdown?":true,"Statistics":{"Transport layer setup":"0 ms","Run initial syncer crash recovery":"0 ms","Create storage engine lock file in the data directory":"0 ms","Create storage engine lock file in the data directory":"0 ms","Get metadata describing storage engine":"0 ms","Get metadata describing storage engine":"0 ms","Validate options in metadata against current startup options":"0 ms","Validate options in metadata against current startup options":"0 ms","Create storage engine":"0 ms","Create storage engine":"385 ms","Write current PID to file":"0 ms","Write current PID to file":"0 ms","Initialize FCV before rebuilding indexes":"0 ms","Initialize FCV before rebuilding indexes":"4 ms","Drop abandoned idents and get back indexes that need to be rebuilt or builds that need to be restarted":"0 ms","Drop abandoned idents and get back indexes that need to be rebuilt or builds that need to be restarted":"0 ms","Rebuild indexes for collections":"0 ms","Rebuild indexes for collections":"0 ms","Build user and roles graph":"0 ms","Verify indexes for admin.system.users collection":"0 ms","Verify indexes for admin.system.users collection":"0 ms","Set up the background thread pool responsible for waiting for opTimes to be majority committed":"0 ms","Start up the replication coordinator":"2 ms","Start transport layer":"1 ms","_initAndListen total elapsed time":"405 ms"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:49.947-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:52996","uuid":"5276e7d0-0835-4586-a920-4e252c89dfc7","connectionId":1,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:49.952-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"127.0.0.1:52996","client":"conn1","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:49.956-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53004","uuid":"7bc7f907-73f7-48d7-88be-3e59d9ead34d","connectionId":2,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:49.957-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"127.0.0.1:53004","client":"conn2","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:49.964-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn2","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53004","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.003-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53018","uuid":"f2051d98-2868-4a38-af90-3335fd9fa243","connectionId":3,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.004-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"127.0.0.1:53018","client":"conn3","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.21.0, LE","os":{"name":"linux","architecture":"x64","version":"7.2.10-100.fc43.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.076-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53030","uuid":"7e2c5586-536e-4aad-acef-304dc2d65665","connectionId":4,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.076-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53042","uuid":"cc5103f3-8ec6-4660-aeec-2552c814e84a","connectionId":5,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:50.081-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"127.0.0.1:53030","client":"conn4","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.083-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"127.0.0.1:53042","client":"conn5","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.085-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn4","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53030","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.086-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn5","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53042","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.089-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"127.0.0.1:53042","uuid":"cc5103f3-8ec6-4660-aeec-2552c814e84a","connectionId":5,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.089-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"127.0.0.1:53030","uuid":"7e2c5586-536e-4aad-acef-304dc2d65665","connectionId":4,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.094-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"127.0.0.1:52996","uuid":"5276e7d0-0835-4586-a920-4e252c89dfc7","connectionId":1,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:50.094-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"127.0.0.1:53004","uuid":"7bc7f907-73f7-48d7-88be-3e59d9ead34d","connectionId":2,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:50.395-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53048","uuid":"0cf80a1e-7465-4650-839a-eb20cedd82a5","connectionId":6,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:50.397-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"127.0.0.1:53048","client":"conn6","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.401-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53060","uuid":"efb3af20-c4e0-4a6b-ba03-a78a8afeb8fb","connectionId":7,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.402-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"127.0.0.1:53060","client":"conn7","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.407-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn7","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53060","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.513-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53076","uuid":"f0975461-1a06-4b0d-9255-4a8b692056cc","connectionId":8,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.513-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53092","uuid":"76d5d60b-122c-4f9f-8733-a770cd1174a6","connectionId":9,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:50.518-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"127.0.0.1:53076","client":"conn8","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.520-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"127.0.0.1:53092","client":"conn9","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.522-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn8","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53076","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.523-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn9","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53092","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.526-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"127.0.0.1:53048","uuid":"0cf80a1e-7465-4650-839a-eb20cedd82a5","connectionId":6,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.526-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"127.0.0.1:53060","uuid":"efb3af20-c4e0-4a6b-ba03-a78a8afeb8fb","connectionId":7,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.527-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"127.0.0.1:53092","uuid":"76d5d60b-122c-4f9f-8733-a770cd1174a6","connectionId":9,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:50.528-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"127.0.0.1:53076","uuid":"f0975461-1a06-4b0d-9255-4a8b692056cc","connectionId":8,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:50.831-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53108","uuid":"3e389372-70da-4146-a0f5-6627d0da7924","connectionId":10,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:50.833-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"127.0.0.1:53108","client":"conn10","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.837-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53118","uuid":"24d9bd1f-5df8-4400-8e55-803a5d7f293d","connectionId":11,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.838-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"127.0.0.1:53118","client":"conn11","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.845-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn11","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53118","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.930-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53128","uuid":"b701860e-2cea-4a3d-8569-8b52e5c6dd65","connectionId":12,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.930-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53138","uuid":"e51dd470-943c-456a-a3bd-3d5766a4db45","connectionId":13,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:50.933-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"127.0.0.1:53128","client":"conn12","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.933-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"127.0.0.1:53138","client":"conn13","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.936-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn12","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53128","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.937-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn13","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53138","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:50.976-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"127.0.0.1:53108","uuid":"3e389372-70da-4146-a0f5-6627d0da7924","connectionId":10,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:50.976-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"127.0.0.1:53138","uuid":"e51dd470-943c-456a-a3bd-3d5766a4db45","connectionId":13,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:50.976-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"127.0.0.1:53118","uuid":"24d9bd1f-5df8-4400-8e55-803a5d7f293d","connectionId":11,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:50.976-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"127.0.0.1:53128","uuid":"b701860e-2cea-4a3d-8569-8b52e5c6dd65","connectionId":12,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:51.282-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53150","uuid":"00f0dae6-e66a-41a6-af9c-600c6cf5b802","connectionId":14,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:51.285-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"127.0.0.1:53150","client":"conn14","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.289-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53160","uuid":"a3f6931b-7480-4698-8dbe-669376fe25a6","connectionId":15,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:51.290-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"127.0.0.1:53160","client":"conn15","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.295-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn15","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53160","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.383-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53170","uuid":"add149c6-cf91-4e3f-927b-6a42a8b02f3e","connectionId":16,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:51.383-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53174","uuid":"48a4efcb-daf6-4155-9336-30d1bdf72205","connectionId":17,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:51.386-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"127.0.0.1:53170","client":"conn16","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.388-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn17","msg":"client metadata","attr":{"remote":"127.0.0.1:53174","client":"conn17","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.390-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn16","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53170","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.411-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn17","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:53174","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.424-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn14","msg":"Connection ended","attr":{"remote":"127.0.0.1:53150","uuid":"00f0dae6-e66a-41a6-af9c-600c6cf5b802","connectionId":14,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:51.424-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn16","msg":"Connection ended","attr":{"remote":"127.0.0.1:53170","uuid":"add149c6-cf91-4e3f-927b-6a42a8b02f3e","connectionId":16,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:51.424-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn15","msg":"Connection ended","attr":{"remote":"127.0.0.1:53160","uuid":"a3f6931b-7480-4698-8dbe-669376fe25a6","connectionId":15,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:51.424-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn17","msg":"Connection ended","attr":{"remote":"127.0.0.1:53174","uuid":"48a4efcb-daf6-4155-9336-30d1bdf72205","connectionId":17,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:51.727-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53190","uuid":"b49f8b88-13eb-467a-8ed8-bfd4a2741036","connectionId":18,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:51.729-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn18","msg":"client metadata","attr":{"remote":"127.0.0.1:53190","client":"conn18","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.733-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:53206","uuid":"982070ad-465b-43b0-8392-cdca279052a8","connectionId":19,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:51.735-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn19","msg":"client metadata","attr":{"remote":"127.0.0.1:53206","client":"conn19","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.740-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn19","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:53206","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.852-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38382","uuid":"e221947c-318d-4609-bf5c-845361fd7f6b","connectionId":20,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:51.852-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38390","uuid":"69214398-bba4-4ca1-910c-29a07a984c20","connectionId":21,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:51.856-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn19","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { aggregate: \"atlascli\", pipeline: [ { $match: { managedClusterType: \"atlasCliLocalDevCluster\" } }, { $group: { _id: 1, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID(\"14905f08-2f31-4644-a102-ce5d266ad4d4\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.857-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn20","msg":"client metadata","attr":{"remote":"127.0.0.1:38382","client":"conn20","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.858-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn19","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: \"foo\", lsid: { id: UUID(\"3c3da0e6-b85a-4717-bb8d-15c43833d21e\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.859-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn21","msg":"client metadata","attr":{"remote":"127.0.0.1:38390","client":"conn21","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.860-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn20","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38382","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.861-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn21","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38390","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.864-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn21","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: 1, featureCompatibilityVersion: 1, lsid: { id: UUID(\"14905f08-2f31-4644-a102-ce5d266ad4d4\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:51.865-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn21","msg":"Connection ended","attr":{"remote":"127.0.0.1:38390","uuid":"69214398-bba4-4ca1-910c-29a07a984c20","connectionId":21,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:51.869-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn18","msg":"Connection ended","attr":{"remote":"127.0.0.1:53190","uuid":"b49f8b88-13eb-467a-8ed8-bfd4a2741036","connectionId":18,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:51.870-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn20","msg":"Connection ended","attr":{"remote":"127.0.0.1:38382","uuid":"e221947c-318d-4609-bf5c-845361fd7f6b","connectionId":20,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:51.870-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn19","msg":"Connection ended","attr":{"remote":"127.0.0.1:53206","uuid":"982070ad-465b-43b0-8392-cdca279052a8","connectionId":19,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:52.164-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38394","uuid":"d4325e3f-011b-446b-bc80-fbad3eb0ed9f","connectionId":22,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:52.166-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn22","msg":"client metadata","attr":{"remote":"127.0.0.1:38394","client":"conn22","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.170-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38408","uuid":"c1340475-d6c6-4131-a48e-5fb3982a0092","connectionId":23,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:52.173-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn23","msg":"client metadata","attr":{"remote":"127.0.0.1:38408","client":"conn23","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.178-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn23","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38408","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.261-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38412","uuid":"66d3f6cc-f2ed-4536-8a26-f96caf52e529","connectionId":24,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:52.262-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38422","uuid":"4181ef29-7592-4642-b23d-e2b64d9315f3","connectionId":25,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:52.264-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn24","msg":"client metadata","attr":{"remote":"127.0.0.1:38412","client":"conn24","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.266-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn25","msg":"client metadata","attr":{"remote":"127.0.0.1:38422","client":"conn25","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.267-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn24","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38412","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.305-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn25","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38422","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.336-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn22","msg":"Connection ended","attr":{"remote":"127.0.0.1:38394","uuid":"d4325e3f-011b-446b-bc80-fbad3eb0ed9f","connectionId":22,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:52.336-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn24","msg":"Connection ended","attr":{"remote":"127.0.0.1:38412","uuid":"66d3f6cc-f2ed-4536-8a26-f96caf52e529","connectionId":24,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:52.336-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn25","msg":"Connection ended","attr":{"remote":"127.0.0.1:38422","uuid":"4181ef29-7592-4642-b23d-e2b64d9315f3","connectionId":25,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:52.337-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn23","msg":"Connection ended","attr":{"remote":"127.0.0.1:38408","uuid":"c1340475-d6c6-4131-a48e-5fb3982a0092","connectionId":23,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:52.628-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38424","uuid":"91f45923-59e6-49f6-af4c-5e49aca20f35","connectionId":26,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:52.630-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn26","msg":"client metadata","attr":{"remote":"127.0.0.1:38424","client":"conn26","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.634-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38434","uuid":"a73365c1-fc38-4595-bb5e-a8dbc37ebdad","connectionId":27,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:52.635-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn27","msg":"client metadata","attr":{"remote":"127.0.0.1:38434","client":"conn27","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.640-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn27","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38434","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.724-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38436","uuid":"27919e97-2ec2-4cf3-aec7-0fa78d0bc8b7","connectionId":28,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:52.724-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38446","uuid":"bb167b95-7899-40bb-aedc-50b48c9b25f3","connectionId":29,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:52.727-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn28","msg":"client metadata","attr":{"remote":"127.0.0.1:38436","client":"conn28","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.727-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn29","msg":"client metadata","attr":{"remote":"127.0.0.1:38446","client":"conn29","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.730-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn28","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38436","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.731-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn29","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38446","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.755-07:00"},"s":"I",  "c":"-",        "id":20701,   "ctx":"conn27","msg":"Creating profile collection","attr":{"namespace":"comercial.system.profile"}}
+
+{"t":{"$date":"2026-11-07T05:50:52.755-07:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn27","msg":"createCollection","attr":{"namespace":"comercial.system.profile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"c72468d9-8520-4f34-ac7c-ceec936b763a"}},"options":{"capped":true,"size":1048576}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.766-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn27","msg":"Profiler settings changed","attr":{"from":{"level":0,"slowms":100,"sampleRate":1},"to":{"level":2,"slowms":100,"sampleRate":1}}}
+
+{"t":{"$date":"2026-11-07T05:50:52.770-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn26","msg":"Connection ended","attr":{"remote":"127.0.0.1:38424","uuid":"91f45923-59e6-49f6-af4c-5e49aca20f35","connectionId":26,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:52.771-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn27","msg":"Connection ended","attr":{"remote":"127.0.0.1:38434","uuid":"a73365c1-fc38-4595-bb5e-a8dbc37ebdad","connectionId":27,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:52.772-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn28","msg":"Connection ended","attr":{"remote":"127.0.0.1:38436","uuid":"27919e97-2ec2-4cf3-aec7-0fa78d0bc8b7","connectionId":28,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:52.773-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn29","msg":"Connection ended","attr":{"remote":"127.0.0.1:38446","uuid":"bb167b95-7899-40bb-aedc-50b48c9b25f3","connectionId":29,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:53.072-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38460","uuid":"bc03aae3-c243-4193-b0e3-f9f704e0ed53","connectionId":30,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:53.075-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn30","msg":"client metadata","attr":{"remote":"127.0.0.1:38460","client":"conn30","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.079-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38462","uuid":"f3ae5dcb-aca5-4266-a74a-46821c9c00a1","connectionId":31,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:53.080-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn31","msg":"client metadata","attr":{"remote":"127.0.0.1:38462","client":"conn31","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.085-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn31","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38462","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.199-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38466","uuid":"c15d0d96-f426-4d92-8785-d0e1162dce7a","connectionId":32,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:53.199-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38482","uuid":"e23d5402-1503-4ef6-aa62-5f0854e4210c","connectionId":33,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:53.202-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn31","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { aggregate: \"atlascli\", pipeline: [ { $match: { managedClusterType: \"atlasCliLocalDevCluster\" } }, { $group: { _id: 1, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID(\"ab0c6a6d-d433-437e-97c3-b57808541cfc\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.205-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn32","msg":"client metadata","attr":{"remote":"127.0.0.1:38466","client":"conn32","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.205-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn33","msg":"client metadata","attr":{"remote":"127.0.0.1:38482","client":"conn33","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.206-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn31","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: \"foo\", lsid: { id: UUID(\"03accdf8-f1c1-4c14-8d0e-66ac060022e4\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.208-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn32","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38466","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.209-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn33","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38482","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.211-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn33","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: 1, featureCompatibilityVersion: 1, lsid: { id: UUID(\"03accdf8-f1c1-4c14-8d0e-66ac060022e4\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.221-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn30","msg":"Connection ended","attr":{"remote":"127.0.0.1:38460","uuid":"bc03aae3-c243-4193-b0e3-f9f704e0ed53","connectionId":30,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:53.221-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn32","msg":"Connection ended","attr":{"remote":"127.0.0.1:38466","uuid":"c15d0d96-f426-4d92-8785-d0e1162dce7a","connectionId":32,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:53.221-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn33","msg":"Connection ended","attr":{"remote":"127.0.0.1:38482","uuid":"e23d5402-1503-4ef6-aa62-5f0854e4210c","connectionId":33,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:53.221-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn31","msg":"Connection ended","attr":{"remote":"127.0.0.1:38462","uuid":"f3ae5dcb-aca5-4266-a74a-46821c9c00a1","connectionId":31,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:53.513-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38484","uuid":"2c93596f-9f45-4802-b0a9-0c0b87ec5f9a","connectionId":34,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:53.515-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn34","msg":"client metadata","attr":{"remote":"127.0.0.1:38484","client":"conn34","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.519-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38488","uuid":"bb4a8d0b-b67e-4fda-a666-148680665928","connectionId":35,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:53.520-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn35","msg":"client metadata","attr":{"remote":"127.0.0.1:38488","client":"conn35","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.525-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn35","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38488","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.611-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38504","uuid":"93c90e98-fc0a-4359-85e7-63726d44e470","connectionId":36,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:53.611-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38520","uuid":"f05ffff9-8542-4141-b50d-e7501c97b98b","connectionId":37,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:53.614-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn36","msg":"client metadata","attr":{"remote":"127.0.0.1:38504","client":"conn36","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.614-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn37","msg":"client metadata","attr":{"remote":"127.0.0.1:38520","client":"conn37","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.618-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn36","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38504","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.618-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn37","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38520","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.661-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn34","msg":"Connection ended","attr":{"remote":"127.0.0.1:38484","uuid":"2c93596f-9f45-4802-b0a9-0c0b87ec5f9a","connectionId":34,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:53.661-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn36","msg":"Connection ended","attr":{"remote":"127.0.0.1:38504","uuid":"93c90e98-fc0a-4359-85e7-63726d44e470","connectionId":36,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:53.661-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn37","msg":"Connection ended","attr":{"remote":"127.0.0.1:38520","uuid":"f05ffff9-8542-4141-b50d-e7501c97b98b","connectionId":37,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:53.661-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn35","msg":"Connection ended","attr":{"remote":"127.0.0.1:38488","uuid":"bb4a8d0b-b67e-4fda-a666-148680665928","connectionId":35,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:53.967-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38536","uuid":"0184528d-a2fc-4cd4-b5b8-0c187aaf9878","connectionId":38,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:53.969-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn38","msg":"client metadata","attr":{"remote":"127.0.0.1:38536","client":"conn38","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.973-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38552","uuid":"69034e29-d6ab-497e-a35c-ea297a01e377","connectionId":39,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:53.975-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn39","msg":"client metadata","attr":{"remote":"127.0.0.1:38552","client":"conn39","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:53.980-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn39","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38552","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.068-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38558","uuid":"be9e2175-ce41-4d19-ac94-2fbcadb6012e","connectionId":40,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:54.068-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38564","uuid":"4f80f396-a94d-4b9d-b5df-414f92c731b7","connectionId":41,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:54.071-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn40","msg":"client metadata","attr":{"remote":"127.0.0.1:38558","client":"conn40","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.071-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn41","msg":"client metadata","attr":{"remote":"127.0.0.1:38564","client":"conn41","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.074-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn40","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38558","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.075-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn41","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38564","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.103-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn39","msg":"Profiler settings changed","attr":{"from":{"level":2,"slowms":100,"sampleRate":1},"to":{"level":0,"slowms":100,"sampleRate":1}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.111-07:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn41","msg":"CMD: drop","attr":{"namespace":"comercial.system.profile"}}
+
+{"t":{"$date":"2026-11-07T05:50:54.111-07:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn41","msg":"Finishing collection drop","attr":{"namespace":"comercial.system.profile","uuid":{"uuid":{"$uuid":"c72468d9-8520-4f34-ac7c-ceec936b763a"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.111-07:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn41","msg":"Deferring table drop for collection","attr":{"namespace":"comercial.system.profile","ident":"collection-0--3811081035106497341","dropTime":{"checkpointIteration":"0"}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.112-07:00"},"s":"I",  "c":"-",        "id":20701,   "ctx":"conn41","msg":"Creating profile collection","attr":{"namespace":"comercial.system.profile"}}
+
+{"t":{"$date":"2026-11-07T05:50:54.112-07:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn41","msg":"createCollection","attr":{"namespace":"comercial.system.profile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"08c89886-bfaa-4d01-b7db-89f11f4f246e"}},"options":{"capped":true,"size":1048576}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.123-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn41","msg":"Profiler settings changed","attr":{"from":{"level":0,"slowms":100,"sampleRate":1},"to":{"level":1,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.130-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn38","msg":"Connection ended","attr":{"remote":"127.0.0.1:38536","uuid":"0184528d-a2fc-4cd4-b5b8-0c187aaf9878","connectionId":38,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:54.130-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn41","msg":"Connection ended","attr":{"remote":"127.0.0.1:38564","uuid":"4f80f396-a94d-4b9d-b5df-414f92c731b7","connectionId":41,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:54.130-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn40","msg":"Connection ended","attr":{"remote":"127.0.0.1:38558","uuid":"be9e2175-ce41-4d19-ac94-2fbcadb6012e","connectionId":40,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:54.130-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn39","msg":"Connection ended","attr":{"remote":"127.0.0.1:38552","uuid":"69034e29-d6ab-497e-a35c-ea297a01e377","connectionId":39,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:54.423-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38570","uuid":"8ba2b7f0-ff04-4107-83cc-4e4dd012d490","connectionId":42,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:54.425-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn42","msg":"client metadata","attr":{"remote":"127.0.0.1:38570","client":"conn42","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.429-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38582","uuid":"55a1677d-ae3e-4217-8f07-ab6116a52ae5","connectionId":43,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:54.430-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn43","msg":"client metadata","attr":{"remote":"127.0.0.1:38582","client":"conn43","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.436-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn43","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38582","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.544-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38586","uuid":"76fc03f3-51d2-423b-b09e-14e4c4dfdbdc","connectionId":44,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:54.544-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38598","uuid":"fe729d6f-8fb6-4695-b559-18e286b1feb5","connectionId":45,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:54.547-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn43","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { aggregate: \"atlascli\", pipeline: [ { $match: { managedClusterType: \"atlasCliLocalDevCluster\" } }, { $group: { _id: 1, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID(\"f9bbcbe4-c98f-474b-b707-6a42e0315a3a\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.548-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn44","msg":"client metadata","attr":{"remote":"127.0.0.1:38586","client":"conn44","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.549-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn45","msg":"client metadata","attr":{"remote":"127.0.0.1:38598","client":"conn45","negotiatedCompressors":[],"doc":{"application":{"name":"app-ventas-web"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.550-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn43","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: \"foo\", lsid: { id: UUID(\"2a1919d9-15f8-4dd6-8c1a-d29fd874c303\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.552-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn44","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38586","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.552-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn45","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38598","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.555-07:00"},"s":"I",  "c":"ACCESS",   "id":20436,   "ctx":"conn45","msg":"Checking authorization failed","attr":{"error":{"code":13,"codeName":"Unauthorized","errmsg":"not authorized on admin to execute command { getParameter: 1, featureCompatibilityVersion: 1, lsid: { id: UUID(\"2a1919d9-15f8-4dd6-8c1a-d29fd874c303\") }, $db: \"admin\" }"}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.556-07:00"},"s":"I",  "c":"WRITE",    "id":51803,   "ctx":"conn44","msg":"Slow query","attr":{"type":"update","ns":"comercial.clientes","appName":"app-ventas-web","command":{"q":{"_id":1},"u":{"$set":{"telefono":"6670000000"}},"multi":false,"upsert":false},"planSummary":"IDHACK","keysExamined":1,"docsExamined":1,"nMatched":1,"nModified":1,"nUpserted":0,"numYields":0,"locks":{"ParallelBatchWriterMode":{"acquireCount":{"r":1}},"FeatureCompatibilityVersion":{"acquireCount":{"w":1}},"ReplicationStateTransition":{"acquireCount":{"w":1}},"Global":{"acquireCount":{"w":1}},"Database":{"acquireCount":{"w":1}},"Collection":{"acquireCount":{"w":1}},"Mutex":{"acquireCount":{"r":1}}},"flowControl":{"acquireCount":1,"timeAcquiringMicros":1},"storage":{},"remote":"127.0.0.1:38586","durationMillis":0}}
+
+{"t":{"$date":"2026-11-07T05:50:54.563-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn42","msg":"Connection ended","attr":{"remote":"127.0.0.1:38570","uuid":"8ba2b7f0-ff04-4107-83cc-4e4dd012d490","connectionId":42,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:54.563-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn44","msg":"Connection ended","attr":{"remote":"127.0.0.1:38586","uuid":"76fc03f3-51d2-423b-b09e-14e4c4dfdbdc","connectionId":44,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:54.563-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn45","msg":"Connection ended","attr":{"remote":"127.0.0.1:38598","uuid":"fe729d6f-8fb6-4695-b559-18e286b1feb5","connectionId":45,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:54.563-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn43","msg":"Connection ended","attr":{"remote":"127.0.0.1:38582","uuid":"55a1677d-ae3e-4217-8f07-ab6116a52ae5","connectionId":43,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:54.864-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38606","uuid":"5d7f2d59-9a73-426d-84ac-2402f2c28cc5","connectionId":46,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:54.866-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn46","msg":"client metadata","attr":{"remote":"127.0.0.1:38606","client":"conn46","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.870-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38618","uuid":"6720efc9-52dd-4267-8e0b-a760b49ba180","connectionId":47,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:54.871-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn47","msg":"client metadata","attr":{"remote":"127.0.0.1:38618","client":"conn47","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.877-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn47","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38618","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.964-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38624","uuid":"82d19b83-5ef4-459b-8c73-cd9eece5e020","connectionId":48,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:54.965-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38628","uuid":"110b91f7-13bb-421d-9fa3-b90aa0866420","connectionId":49,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:54.969-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn48","msg":"client metadata","attr":{"remote":"127.0.0.1:38624","client":"conn48","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.969-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn49","msg":"client metadata","attr":{"remote":"127.0.0.1:38628","client":"conn49","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.973-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn48","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38624","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:54.973-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn49","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38628","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.011-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn46","msg":"Connection ended","attr":{"remote":"127.0.0.1:38606","uuid":"5d7f2d59-9a73-426d-84ac-2402f2c28cc5","connectionId":46,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:55.011-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn48","msg":"Connection ended","attr":{"remote":"127.0.0.1:38624","uuid":"82d19b83-5ef4-459b-8c73-cd9eece5e020","connectionId":48,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:55.011-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn49","msg":"Connection ended","attr":{"remote":"127.0.0.1:38628","uuid":"110b91f7-13bb-421d-9fa3-b90aa0866420","connectionId":49,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.011-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn47","msg":"Connection ended","attr":{"remote":"127.0.0.1:38618","uuid":"6720efc9-52dd-4267-8e0b-a760b49ba180","connectionId":47,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:55.319-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38632","uuid":"df7d8266-574b-4a0f-a5aa-7e1b6dbd31f3","connectionId":50,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.321-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn50","msg":"client metadata","attr":{"remote":"127.0.0.1:38632","client":"conn50","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.325-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38642","uuid":"11e641d5-53e1-4e36-a004-aed4304f5560","connectionId":51,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:55.326-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn51","msg":"client metadata","attr":{"remote":"127.0.0.1:38642","client":"conn51","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.333-07:00"},"s":"I",  "c":"ACCESS",   "id":20249,   "ctx":"conn51","msg":"Authentication failed","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"app_ventas","authenticationDatabase":"comercial","remote":"127.0.0.1:38642","extraInfo":{},"error":"AuthenticationFailed: SCRAM authentication failed, storedKey mismatch"}}
+
+{"t":{"$date":"2026-11-07T05:50:55.334-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn51","msg":"Connection ended","attr":{"remote":"127.0.0.1:38642","uuid":"11e641d5-53e1-4e36-a004-aed4304f5560","connectionId":51,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.335-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn50","msg":"Connection ended","attr":{"remote":"127.0.0.1:38632","uuid":"df7d8266-574b-4a0f-a5aa-7e1b6dbd31f3","connectionId":50,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:55.649-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38650","uuid":"9e102164-001c-4791-a3f2-1c4e7cff95d2","connectionId":52,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.651-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn52","msg":"client metadata","attr":{"remote":"127.0.0.1:38650","client":"conn52","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.658-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38654","uuid":"2130e2cd-0138-4d9d-925e-45ca8eddc0cc","connectionId":53,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:55.660-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn53","msg":"client metadata","attr":{"remote":"127.0.0.1:38654","client":"conn53","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.660-07:00"},"s":"I",  "c":"ACCESS",   "id":20251,   "ctx":"conn53","msg":"Supported SASL mechanisms requested for unknown user","attr":{"user":{"user":"usuario_inexistente","db":"comercial"}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.660-07:00"},"s":"I",  "c":"ACCESS",   "id":20249,   "ctx":"conn53","msg":"Authentication failed","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"usuario_inexistente","authenticationDatabase":"comercial","remote":"127.0.0.1:38654","extraInfo":{},"error":"UserNotFound: Could not find user \"usuario_inexistente\" for db \"comercial\""}}
+
+{"t":{"$date":"2026-11-07T05:50:55.662-07:00"},"s":"I",  "c":"ACCESS",   "id":20249,   "ctx":"conn53","msg":"Authentication failed","attr":{"mechanism":"SCRAM-SHA-256","speculative":false,"principalName":"usuario_inexistente","authenticationDatabase":"comercial","remote":"127.0.0.1:38654","extraInfo":{},"error":"UserNotFound: Could not find user \"usuario_inexistente\" for db \"comercial\""}}
+
+{"t":{"$date":"2026-11-07T05:50:55.663-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn53","msg":"Connection ended","attr":{"remote":"127.0.0.1:38654","uuid":"2130e2cd-0138-4d9d-925e-45ca8eddc0cc","connectionId":53,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.663-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn52","msg":"Connection ended","attr":{"remote":"127.0.0.1:38650","uuid":"9e102164-001c-4791-a3f2-1c4e7cff95d2","connectionId":52,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:55.987-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38658","uuid":"c36d0ddd-f27c-4d6f-b4e4-8f96d250da27","connectionId":54,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:55.989-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn54","msg":"client metadata","attr":{"remote":"127.0.0.1:38658","client":"conn54","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.993-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38660","uuid":"d40e4fae-23a0-43e5-aaf3-c96742b93f85","connectionId":55,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:55.994-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn55","msg":"client metadata","attr":{"remote":"127.0.0.1:38660","client":"conn55","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:55.999-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn55","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38660","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.084-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38670","uuid":"3f761de7-3c57-479d-81e1-43ea7ed54b5b","connectionId":56,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:56.084-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38684","uuid":"500e9359-f329-46d2-b6cc-9277c94fb848","connectionId":57,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:56.088-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn56","msg":"client metadata","attr":{"remote":"127.0.0.1:38670","client":"conn56","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.089-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn57","msg":"client metadata","attr":{"remote":"127.0.0.1:38684","client":"conn57","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.092-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn56","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38670","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.136-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn57","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38684","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.166-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn54","msg":"Connection ended","attr":{"remote":"127.0.0.1:38658","uuid":"c36d0ddd-f27c-4d6f-b4e4-8f96d250da27","connectionId":54,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:56.166-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn57","msg":"Connection ended","attr":{"remote":"127.0.0.1:38684","uuid":"500e9359-f329-46d2-b6cc-9277c94fb848","connectionId":57,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:56.166-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn56","msg":"Connection ended","attr":{"remote":"127.0.0.1:38670","uuid":"3f761de7-3c57-479d-81e1-43ea7ed54b5b","connectionId":56,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:56.166-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn55","msg":"Connection ended","attr":{"remote":"127.0.0.1:38660","uuid":"d40e4fae-23a0-43e5-aaf3-c96742b93f85","connectionId":55,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:56.460-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38692","uuid":"ed67d549-6587-4c53-9868-9aee49d5ddb3","connectionId":58,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:56.462-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn58","msg":"client metadata","attr":{"remote":"127.0.0.1:38692","client":"conn58","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.466-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38702","uuid":"646871ea-ccd0-41b8-9c1a-10a5e36edc91","connectionId":59,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:56.468-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn59","msg":"client metadata","attr":{"remote":"127.0.0.1:38702","client":"conn59","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.473-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn59","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38702","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.560-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38706","uuid":"192c2f8f-b3d3-451a-bcb6-a41c59f41323","connectionId":60,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:56.560-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38722","uuid":"eb933a40-ce7a-445d-a080-7a955de63551","connectionId":61,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:56.563-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn60","msg":"client metadata","attr":{"remote":"127.0.0.1:38706","client":"conn60","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.563-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn61","msg":"client metadata","attr":{"remote":"127.0.0.1:38722","client":"conn61","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.566-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn60","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38706","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.567-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn61","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38722","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.631-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn58","msg":"Connection ended","attr":{"remote":"127.0.0.1:38692","uuid":"ed67d549-6587-4c53-9868-9aee49d5ddb3","connectionId":58,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:56.631-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn61","msg":"Connection ended","attr":{"remote":"127.0.0.1:38722","uuid":"eb933a40-ce7a-445d-a080-7a955de63551","connectionId":61,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:56.631-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn60","msg":"Connection ended","attr":{"remote":"127.0.0.1:38706","uuid":"192c2f8f-b3d3-451a-bcb6-a41c59f41323","connectionId":60,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:56.631-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn59","msg":"Connection ended","attr":{"remote":"127.0.0.1:38702","uuid":"646871ea-ccd0-41b8-9c1a-10a5e36edc91","connectionId":59,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:56.929-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38726","uuid":"46b90a19-c739-454d-8969-4436e73321e8","connectionId":62,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:56.931-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn62","msg":"client metadata","attr":{"remote":"127.0.0.1:38726","client":"conn62","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.935-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38742","uuid":"c25eba32-1fce-4a76-b3d4-0363843e14c3","connectionId":63,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:56.937-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn63","msg":"client metadata","attr":{"remote":"127.0.0.1:38742","client":"conn63","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:56.942-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn63","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38742","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.045-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38748","uuid":"8e2c93c2-a245-4707-917c-5b4319253fdb","connectionId":64,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:57.045-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38750","uuid":"137f6825-e6d5-4047-a7ef-9a8cf59977bb","connectionId":65,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:57.048-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn64","msg":"client metadata","attr":{"remote":"127.0.0.1:38748","client":"conn64","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.050-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn65","msg":"client metadata","attr":{"remote":"127.0.0.1:38750","client":"conn65","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.052-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn64","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38748","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.101-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn65","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38750","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.125-07:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn65","msg":"createCollection","attr":{"namespace":"auditoria.instantaneas_privilegios","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"7e8da8cf-6d35-4fde-acf0-f7f2b0e2213f"}},"options":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.194-07:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn65","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"7e8da8cf-6d35-4fde-acf0-f7f2b0e2213f"}},"namespace":"auditoria.instantaneas_privilegios","index":"_id_","ident":"index-3--3811081035106497341","collectionIdent":"collection-2--3811081035106497341","commitTimestamp":null}}
+
+{"t":{"$date":"2026-11-07T05:50:57.195-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn65","msg":"Profiler settings changed","attr":{"from":{"level":1,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}},"to":{"level":2,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.219-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn65","msg":"Profiler settings changed","attr":{"from":{"level":2,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}},"to":{"level":1,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.222-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn62","msg":"Connection ended","attr":{"remote":"127.0.0.1:38726","uuid":"46b90a19-c739-454d-8969-4436e73321e8","connectionId":62,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:57.222-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn65","msg":"Connection ended","attr":{"remote":"127.0.0.1:38750","uuid":"137f6825-e6d5-4047-a7ef-9a8cf59977bb","connectionId":65,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:57.222-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn64","msg":"Connection ended","attr":{"remote":"127.0.0.1:38748","uuid":"8e2c93c2-a245-4707-917c-5b4319253fdb","connectionId":64,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:57.222-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn63","msg":"Connection ended","attr":{"remote":"127.0.0.1:38742","uuid":"c25eba32-1fce-4a76-b3d4-0363843e14c3","connectionId":63,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:57.519-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38766","uuid":"b220c8db-2f36-402d-bd18-f38efe2944ee","connectionId":66,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:57.521-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn66","msg":"client metadata","attr":{"remote":"127.0.0.1:38766","client":"conn66","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.526-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38770","uuid":"24a4d640-cbb6-40ef-8113-974609073420","connectionId":67,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:57.527-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn67","msg":"client metadata","attr":{"remote":"127.0.0.1:38770","client":"conn67","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.533-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn67","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38770","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.617-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38786","uuid":"0be69cad-434b-4ae9-b458-b8d99e7367a8","connectionId":68,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:57.617-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38788","uuid":"7c08f16f-73aa-48ad-9cc5-017e8247b568","connectionId":69,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:57.619-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn68","msg":"client metadata","attr":{"remote":"127.0.0.1:38786","client":"conn68","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.621-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn69","msg":"client metadata","attr":{"remote":"127.0.0.1:38788","client":"conn69","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.623-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn68","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38786","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.645-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn69","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38788","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.674-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn66","msg":"Connection ended","attr":{"remote":"127.0.0.1:38766","uuid":"b220c8db-2f36-402d-bd18-f38efe2944ee","connectionId":66,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:57.675-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn68","msg":"Connection ended","attr":{"remote":"127.0.0.1:38786","uuid":"0be69cad-434b-4ae9-b458-b8d99e7367a8","connectionId":68,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:57.675-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn69","msg":"Connection ended","attr":{"remote":"127.0.0.1:38788","uuid":"7c08f16f-73aa-48ad-9cc5-017e8247b568","connectionId":69,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:57.675-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn67","msg":"Connection ended","attr":{"remote":"127.0.0.1:38770","uuid":"24a4d640-cbb6-40ef-8113-974609073420","connectionId":67,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:57.975-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38790","uuid":"64c227f6-f8c7-4248-b16d-b8731fcc8cb4","connectionId":70,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:57.977-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn70","msg":"client metadata","attr":{"remote":"127.0.0.1:38790","client":"conn70","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.981-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38798","uuid":"54bfd1ab-08f2-45a3-af78-7bb6559ec0af","connectionId":71,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:57.983-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn71","msg":"client metadata","attr":{"remote":"127.0.0.1:38798","client":"conn71","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:57.988-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn71","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38798","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.097-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38814","uuid":"27b6077a-ee12-4af7-8def-dd617829fbbb","connectionId":72,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:58.097-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38824","uuid":"1985b0b1-2994-4fe2-a5ab-94669a38b038","connectionId":73,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:58.104-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn72","msg":"client metadata","attr":{"remote":"127.0.0.1:38814","client":"conn72","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.104-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn73","msg":"client metadata","attr":{"remote":"127.0.0.1:38824","client":"conn73","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.108-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn72","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38814","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.109-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn73","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38824","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.111-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn72","msg":"Connection ended","attr":{"remote":"127.0.0.1:38814","uuid":"27b6077a-ee12-4af7-8def-dd617829fbbb","connectionId":72,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:58.113-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn70","msg":"Connection ended","attr":{"remote":"127.0.0.1:38790","uuid":"64c227f6-f8c7-4248-b16d-b8731fcc8cb4","connectionId":70,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:58.113-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn71","msg":"Connection ended","attr":{"remote":"127.0.0.1:38798","uuid":"54bfd1ab-08f2-45a3-af78-7bb6559ec0af","connectionId":71,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:58.114-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn73","msg":"Connection ended","attr":{"remote":"127.0.0.1:38824","uuid":"1985b0b1-2994-4fe2-a5ab-94669a38b038","connectionId":73,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-07T05:50:58.401-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38828","uuid":"7fb5a815-4f27-416e-8326-863b69794db8","connectionId":74,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-07T05:50:58.406-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn74","msg":"client metadata","attr":{"remote":"127.0.0.1:38828","client":"conn74","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.410-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38830","uuid":"bcfa182d-35c7-4740-a0fc-49f9da41d1cf","connectionId":75,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-07T05:50:58.411-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn75","msg":"client metadata","attr":{"remote":"127.0.0.1:38830","client":"conn75","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.416-07:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn75","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"admin","authenticationDatabase":"admin","remote":"127.0.0.1:38830","extraInfo":{}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.525-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38846","uuid":"e050fd0b-ce3a-417a-8631-6e1b34a4e33d","connectionId":76,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-07T05:50:58.526-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:38848","uuid":"3b5360fd-22c2-4716-a9e8-e0e5aba7f84a","connectionId":77,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-07T05:50:58.528-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn76","msg":"client metadata","attr":{"remote":"127.0.0.1:38846","client":"conn76","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
+{"t":{"$date":"2026-11-07T05:50:58.530-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn77","msg":"client metadata","attr":{"remote":"127.0.0.1:38848","client":"conn77","negotiatedCompressors":[],"doc":{"application":{"name":"mongosh 2.8.3"},"driver":{"name":"nodejs|mongosh","version":"7.1.0|2.8.3"},"platform":"Node.js v24.15.0, LE","os":{"name":"linux","architecture":"x64","version":"3.10.0-327.22.2.el7.x86_64","type":"Linux"}}}}
+
