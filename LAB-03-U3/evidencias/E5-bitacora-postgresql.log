@@ -1,0 +1,149 @@
+2026-11-16 08:28:07.318 CST [10472] user= db= app= client= LOG:  el sistema de bases de datos fue apagado en 2026-10-28 03:53:30 CST
+
+2026-11-16 08:28:56.877 CST [7432] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64247
+
+2026-11-16 08:28:59.283 CST [7528] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64248
+
+2026-11-16 08:28:59.312 CST [7528] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 08:28:59.312 CST [7528] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 08:32:19.237 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: INSERT INTO clientes (nombre, correo, telefono, rfc, edad, ciudad, codigo_postal) VALUES('Ana Lopez', '[CORREO_REDACTADO]', '[NUMERO_REDACTADO]', 'LOAA850315AB', 41, 'Culiacan', '80000'),('Jorge D├é┬íaz', 'sin-correo', '667', NULL, -3, 'Culiac├é┬án', '8000');
+
+2026-11-16 08:33:07.320 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 08:33:09.089 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 9 b├║fers (0.1%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=0.644 s, sync=0.266 s, total=1.772 s; archivos sincronizados=8, m├ís largo=0.061 s, promedio=0.034 s; distancia=8 kB, estimaci├│n=8 kB; lsn=0/2063BB8, lsn de redo=0/2063B80
+
+2026-11-16 08:33:10.195 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] ERROR:  error de sintaxis en o cerca de ├é┬½clientesGROUP├é┬╗ en car├â┬ícter 118
+
+2026-11-16 08:33:10.195 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] SENTENCIA:  SELECT lower(correo) AS correo_normalizado,       count(*) AS registros,       string_agg(id::text, ', ') AS idsFROM clientesGROUP BY lower(correo)HAVING count(*) > 1;
+
+2026-11-16 08:33:21.228 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] ERROR:  error de sintaxis en o cerca de ├é┬½clientesGROUP├é┬╗ en car├â┬ícter 118
+
+2026-11-16 08:33:21.228 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] SENTENCIA:  SELECT lower(correo) AS correo_normalizado,       count(*) AS registros,       string_agg(id::text, ', ') AS idsFROM clientesGROUP BY lower(correo)HAVING count(*) > 1;
+
+2026-11-16 08:33:44.996 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] ERROR:  error de sintaxis en o cerca de ├é┬½public├é┬╗ en car├â┬ícter 115
+
+2026-11-16 08:33:44.996 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] SENTENCIA:  SELECT    lower(correo) AS correo_normalizado,    count(*) AS registros,    string_agg(id::text, ', ') AS idsFROM public.clientesGROUP BY lower(correo)HAVING count(*) > 1;
+
+2026-11-16 08:33:55.252 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] ERROR:  error de sintaxis en o cerca de ├é┬½public├é┬╗ en car├â┬ícter 115
+
+2026-11-16 08:33:55.252 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] SENTENCIA:  SELECT    lower(correo) AS correo_normalizado,    count(*) AS registros,    string_agg(id::text, ', ') AS idsFROM public.clientesGROUP BY lower(correo)HAVING count(*) > 1;
+
+2026-11-16 08:42:47.875 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON TABLE public.clientes IS 'Clientes de Comercializadora Norte. Propietario: Gerencia Comercial. Custodio: DBA. Clasificaci├é┬ón: confidencial (contiene datos personales).';
+
+2026-11-16 08:43:07.106 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 08:43:09.409 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 5 b├║fers (0.0%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=0.440 s, sync=0.915 s, total=2.304 s; archivos sincronizados=5, m├ís largo=0.492 s, promedio=0.183 s; distancia=6 kB, estimaci├│n=8 kB; lsn=0/2065620, lsn de redo=0/20655E8
+
+2026-11-16 08:43:27.571 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.id IS 'Identificador interno del cliente. Generado por el sistema.';
+
+2026-11-16 08:44:00.090 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.nombre IS 'Nombre completo. Dato personal identificador directo.';
+
+2026-11-16 08:44:30.555 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.correo IS 'Correo de contacto. Dato personal. Uso: notificaciones al cliente.';
+
+2026-11-16 08:45:02.666 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.rfc IS 'RFC del cliente. Dato personal. Uso: facturaci├é┬ón. Cambios auditados en auditoria.cambios_clientes.';
+
+2026-11-16 08:45:34.578 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.edad IS 'Edad en a├é┬ños cumplidos. Dato personal. Uso: anal├é┬ítica agregada.';
+
+2026-11-16 08:46:08.506 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.telefono IS 'N├é┬úmero telef├é┬ónico del cliente. Dato personal. Uso: contacto y atenci├é┬ón por parte de personal autorizado.';
+
+2026-11-16 08:46:24.419 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.ciudad IS 'Ciudad de residencia del cliente. Dato de ubicaci├é┬ón. Uso: atenci├é┬ón comercial y an├é┬álisis geogr├é┬áfico agregado.';
+
+2026-11-16 08:46:42.842 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.codigo_postal IS 'C├é┬ódigo postal de residencia del cliente. Dato de ubicaci├é┬ón. Uso: segmentaci├é┬ón geogr├é┬áfica y an├é┬álisis comercial.';
+
+2026-11-16 08:47:05.682 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] ERROR:  car├â┬ícter con secuencia de bytes 0x81 en codificaci├â┬│n ├é┬½WIN1252├é┬╗ no tiene equivalente en la codificaci├â┬│n ├é┬½UTF8├é┬╗
+
+2026-11-16 08:47:36.402 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.fecha_alta IS 'Fecha de registro del cliente en el sistema. Uso: seguimiento de antiguedad y gestion comercial.';
+
+2026-11-16 08:47:57.154 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.segmento IS 'Segmento comercial asignado al cliente. Uso: clasificacion de clientes y analisis comercial agregado.';
+
+2026-11-16 08:48:07.423 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 08:48:08.107 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 4 b├║fers (0.0%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=0.327 s, sync=0.105 s, total=0.684 s; archivos sincronizados=4, m├ís largo=0.032 s, promedio=0.027 s; distancia=9 kB, estimaci├│n=9 kB; lsn=0/2067DC8, lsn de redo=0/2067D90
+
+2026-11-16 08:58:07.136 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 08:58:14.033 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 61 b├║fers (0.4%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=6.523 s, sync=0.239 s, total=6.898 s; archivos sincronizados=13, m├ís largo=0.034 s, promedio=0.019 s; distancia=477 kB, estimaci├│n=477 kB; lsn=0/20DF3C0, lsn de redo=0/20DF388
+
+2026-11-16 09:09:49.149 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: CREATE SCHEMA gobierno;
+
+2026-11-16 09:10:36.259 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: REVOKE ALL ON SCHEMA gobierno FROM PUBLIC;
+
+2026-11-16 09:11:20.695 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: CREATE TABLE gobierno.solicitudes_cambio (    folio            TEXT PRIMARY KEY,    descripcion      TEXT NOT NULL,    solicitado_por   TEXT NOT NULL,    aprobado_por     TEXT,    ambiente         TEXT NOT NULL CHECK (ambiente IN ('desarrollo', 'pruebas', 'produccion')),    fecha_aprobacion TIMESTAMPTZ,    ventana_inicio   TIMESTAMPTZ,    ventana_fin      TIMESTAMPTZ);
+
+2026-11-16 09:11:52.534 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON TABLE gobierno.solicitudes_cambio IS 'Registro de solicitudes de cambio en la base comercial. Propietario: Comit├ó┬Ç┬Ü de cambios. Custodio: DBA. Evidencia de POL-06.';
+
+2026-11-16 09:12:33.958 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: INSERT INTO gobierno.solicitudes_cambio VALUES ('CAM-2026-014', 'Agregar columna canal_alta a clientes', 'Gerencia Comercial', 'Comite de cambios', 'produccion', now() - interval '1 day', now() - interval '5 minutes', now() + interval '1 hour');
+
+2026-11-16 09:13:07.059 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 09:13:12.985 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 39 b├║fers (0.2%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=4.090 s, sync=1.054 s, total=5.926 s; archivos sincronizados=34, m├ís largo=0.290 s, promedio=0.031 s; distancia=160 kB, estimaci├│n=445 kB; lsn=0/2107660, lsn de redo=0/2107628
+
+2026-11-16 09:13:50.954 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: ALTER TABLE public.clientes ADD COLUMN canal_alta VARCHAR(20);
+
+2026-11-16 09:14:27.589 CST [7528] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  sentencia: COMMENT ON COLUMN public.clientes.canal_alta IS 'Canal por el que se registro el cliente. Cambio CAM-2026-014.';
+
+2026-11-16 09:18:07.995 CST [10636] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-16 09:18:09.228 CST [10636] user= db= app= client= LOG:  checkpoint completo: escritos 8 b├║fers (0.0%); 0 archivos WAL a├▒adidos, 0 eliminados, 0 reciclados; write=0.757 s, sync=0.276 s, total=1.233 s; archivos sincronizados=8, m├ís largo=0.097 s, promedio=0.035 s; distancia=32 kB, estimaci├│n=404 kB; lsn=0/210F738, lsn de redo=0/210F700
+
+2026-11-16 09:28:42.967 CST [10688] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64358
+
+2026-11-16 09:28:45.594 CST [5692] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64359
+
+2026-11-16 09:28:45.623 CST [5692] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:28:45.623 CST [5692] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 09:28:45.647 CST [5692] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  desconexi├â┬│n: duraci├â┬│n de sesi├â┬│n: 0:00:00.069 usuario=postgres base=comercial host=[IP_REDACTADA] port=64359
+
+2026-11-16 09:29:36.654 CST [3116] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64368
+
+2026-11-16 09:29:38.476 CST [3704] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64369
+
+2026-11-16 09:29:38.505 CST [3704] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:29:38.506 CST [3704] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 09:29:38.516 CST [3704] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  desconexi├â┬│n: duraci├â┬│n de sesi├â┬│n: 0:00:00.057 usuario=postgres base=comercial host=[IP_REDACTADA] port=64369
+
+2026-11-16 09:30:44.850 CST [9276] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64380
+
+2026-11-16 09:30:50.563 CST [9612] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64381
+
+2026-11-16 09:30:50.592 CST [9612] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:30:50.593 CST [9612] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 09:30:50.596 CST [9612] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  desconexi├â┬│n: duraci├â┬│n de sesi├â┬│n: 0:00:00.050 usuario=postgres base=comercial host=[IP_REDACTADA] port=64381
+
+2026-11-16 09:31:41.261 CST [4656] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64383
+
+2026-11-16 09:31:43.162 CST [9056] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64384
+
+2026-11-16 09:31:43.192 CST [9056] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:31:43.192 CST [9056] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 09:31:43.196 CST [9056] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  desconexi├â┬│n: duraci├â┬│n de sesi├â┬│n: 0:00:00.050 usuario=postgres base=comercial host=[IP_REDACTADA] port=64384
+
+2026-11-16 09:33:26.279 CST [4804] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64390
+
+2026-11-16 09:33:28.035 CST [7164] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64391
+
+2026-11-16 09:33:28.066 CST [7164] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:33:28.066 CST [7164] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+2026-11-16 09:33:28.071 CST [7164] user=postgres db=comercial app=psql client=[IP_REDACTADA] LOG:  desconexi├â┬│n: duraci├â┬│n de sesi├â┬│n: 0:00:00.052 usuario=postgres base=comercial host=[IP_REDACTADA] port=64391
+
+2026-11-16 09:33:34.903 CST [9244] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64392
+
+2026-11-16 09:33:36.841 CST [8432] user=[desconocido] db=[desconocido] app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n recibida: host=[IP_REDACTADA] port=64393
+
+2026-11-16 09:33:36.871 CST [8432] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autenticada: identidad=┬½postgres┬╗ m├®todo=scram-sha-256 (C:/Program Files/PostgreSQL/16/data/pg_hba.conf:115)
+
+2026-11-16 09:33:36.871 CST [8432] user=postgres db=comercial app=[desconocido] client=[IP_REDACTADA] LOG:  conexi├│n autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicaci├│n=psql SSL habilitado (protocolo=TLSv1.3, cifrado=TLS_AES_256_GCM_SHA384, bits=256)
+
+
